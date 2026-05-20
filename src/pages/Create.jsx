@@ -1,0 +1,1 @@
+export default ()=> <div>创作页面</div>

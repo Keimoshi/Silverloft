@@ -1,0 +1,1 @@
+export default ()=> <div>脚本页面</div>

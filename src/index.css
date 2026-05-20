@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .theme-dark [class*="bg-white"] { background-color: rgba(15,23,42,.78) !important; }
+  .theme-dark [class*="bg-slate-50"] { background-color: rgba(30,41,59,.72) !important; }
+  .theme-dark [class*="text-slate-950"],
+  .theme-dark [class*="text-slate-900"],
+  .theme-dark [class*="text-slate-800"] { color: #f8fafc !important; }
+  .theme-dark [class*="text-slate-600"],
+  .theme-dark [class*="text-slate-500"] { color: #cbd5e1 !important; }
+  .theme-dark [class*="text-slate-400"] { color: #94a3b8 !important; }
+  .theme-dark [class*="border-slate-200"],
+  .theme-dark [class*="border-white"],
+  .theme-dark [class*="ring-white"] { 
+    border-color: rgba(148,163,184,.22) !important;
+    --tw-ring-color: rgba(148,163,184,.2) !important; 
+  }
+  .theme-dark [class*="shadow-"] { box-shadow: 0 18px 60px rgba(0,0,0,.28) !important; }
+  .theme-dark input,
+  .theme-dark textarea,
+  .theme-dark select {
+    background-color: rgba(15,23,42,.78) !important;
+    color: #f8fafc !important;
+    border-color: rgba(148,163,184,.28) !important;
+  }
+  .theme-dark .backdrop-blur-xl,
+  .theme-dark .backdrop-blur-2xl { backdrop-filter: blur(20px); }
+}

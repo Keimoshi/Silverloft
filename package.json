@@ -1,0 +1,44 @@
+{
+  "name": "silverloft-illusory-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "~24",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "env -u NODE vite --host",
+    "server": "env -u NODE node server/src/index.js",
+    "start": "env -u NODE node server/src/index.js",
+    "build": "env -u NODE vite build",
+    "preview": "env -u NODE vite preview --host",
+    "test": "env -u NODE vitest run server/test/*.test.js src/illusory-ui.test.jsx src/admin-page.test.jsx src/vite-config.test.js",
+    "test:server": "env -u NODE vitest run server/test/*.test.js",
+    "test:ui": "env -u NODE vitest run src/illusory-ui.test.jsx src/admin-page.test.jsx src/vite-config.test.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "better-sqlite3": "^12.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lucide-react": "^1.14.0",
+    "multer": "^2.0.2",
+    "nanoid": "^5.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "vite": "^5.4.21"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "autoprefixer": "^10.5.0",
+    "jsdom": "^24.1.3",
+    "postcss": "^8.5.13",
+    "supertest": "^7.2.2",
+    "tailwindcss": "^3.4.17",
+    "vitest": "^4.1.5"
+  }
+}

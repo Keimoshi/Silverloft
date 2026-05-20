@@ -1,0 +1,1 @@
+export default ()=> <div>资产库页面</div>

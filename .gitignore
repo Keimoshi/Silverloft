@@ -1,0 +1,69 @@
+.DS_Store
+*.log
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build and framework output
+dist/
+out/
+.next/
+.next-*/
+.vite/
+.astro/
+tsconfig.tsbuildinfo
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Local runtime data
+data/
+open-design-port/.od/
+open-design-port/.od-e2e/
+open-design-port/.ocd/
+open-design-port/.tmp/
+open-design-port/apps/daemon/.env
+
+# Test and browser artifacts
+test-results/
+playwright-report/
+open-design-port/test-results/
+open-design-port/playwright-report/
+open-design-port/e2e/.od-data/
+open-design-port/e2e/playwright-report/
+open-design-port/e2e/reports/html/
+open-design-port/e2e/reports/playwright-html-report/
+open-design-port/e2e/reports/test-results/
+open-design-port/e2e/reports/results.json
+open-design-port/e2e/reports/junit.xml
+open-design-port/e2e/reports/latest.md
+open-design-port/e2e/reports/*.html
+open-design-port/skills/html-ppt/scripts/verify-output/
+
+# Local agent/tool scratch state
+.codex/
+.claude-sessions/
+.cursor/
+.agents/
+.opencode/
+.claude/
+.deepseek/
+.task/
+task.md
+specs/change/active
+.ralph/
+
+# Local temporary exports and screenshots
+temp_boss_zip/
+temp_boss_screenshot.png
+temp_boss_screenshot_tools.png
+open-design-port-running.png
+screenshot.png
+ui_screenshot_t010.png
+
+# Python cache
+__pycache__/
+*.py[cod]
